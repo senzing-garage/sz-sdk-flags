@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -154,6 +155,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+.history
+
 # pytype static type analyzer
 .pytype/
 
@@ -172,3 +175,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# VSCode
+.vscode/
+.history

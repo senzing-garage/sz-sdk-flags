@@ -1,0 +1,1070 @@
+[
+    {
+        "symbol": "SZ_INCLUDE_FEATURE_SCORES",
+        "altSymbol": "SzIncludeFeatureScores",
+        "value": 67108864,
+        "bits": [
+            26
+        ],
+        "definition": "1 << 26"
+    },
+    {
+        "symbol": "SZ_INCLUDE_MATCH_KEY_DETAILS",
+        "altSymbol": "SzIncludeMatchKeyDetails",
+        "value": 17179869184,
+        "bits": [
+            34
+        ],
+        "definition": "1 << 34"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES",
+        "altSymbol": "SzExportIncludeMultiRecordEntities",
+        "value": 1,
+        "bits": [
+            0
+        ],
+        "definition": "1 << 0"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_POSSIBLY_SAME",
+        "altSymbol": "SzExportIncludePossiblySame",
+        "value": 2,
+        "bits": [
+            1
+        ],
+        "definition": "1 << 1"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_POSSIBLY_RELATED",
+        "altSymbol": "SzExportIncludePossiblyRelated",
+        "value": 4,
+        "bits": [
+            2
+        ],
+        "definition": "1 << 2"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_NAME_ONLY",
+        "altSymbol": "SzExportIncludeNameOnly",
+        "value": 8,
+        "bits": [
+            3
+        ],
+        "definition": "1 << 3"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_DISCLOSED",
+        "altSymbol": "SzExportIncludeDisclosed",
+        "value": 16,
+        "bits": [
+            4
+        ],
+        "definition": "1 << 4"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_SINGLE_RECORD_ENTITIES",
+        "altSymbol": "SzExportIncludeSingleRecordEntities",
+        "value": 32,
+        "bits": [
+            5
+        ],
+        "definition": "1 << 5"
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_ALL_ENTITIES",
+        "altSymbol": "SzExportIncludeAllEntities",
+        "value": 33,
+        "bits": [
+            0,
+            5
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES",
+            "SZ_EXPORT_INCLUDE_SINGLE_RECORD_ENTITIES"
+        ],
+        "flags": [
+            "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES",
+            "SZ_EXPORT_INCLUDE_SINGLE_RECORD_ENTITIES"
+        ],
+        "altFlags": [
+            "SzExportIncludeMultiRecordEntities",
+            "SzExportIncludeSingleRecordEntities"
+        ]
+    },
+    {
+        "symbol": "SZ_EXPORT_INCLUDE_ALL_HAVING_RELATIONSHIPS",
+        "altSymbol": "SzExportIncludeAllHavingRelationships",
+        "value": 30,
+        "bits": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_POSSIBLY_SAME",
+            "SZ_EXPORT_INCLUDE_POSSIBLY_RELATED",
+            "SZ_EXPORT_INCLUDE_NAME_ONLY",
+            "SZ_EXPORT_INCLUDE_DISCLOSED"
+        ],
+        "flags": [
+            "SZ_EXPORT_INCLUDE_POSSIBLY_SAME",
+            "SZ_EXPORT_INCLUDE_POSSIBLY_RELATED",
+            "SZ_EXPORT_INCLUDE_NAME_ONLY",
+            "SZ_EXPORT_INCLUDE_DISCLOSED"
+        ],
+        "altFlags": [
+            "SzExportIncludePossiblySame",
+            "SzExportIncludePossiblyRelated",
+            "SzExportIncludeNameOnly",
+            "SzExportIncludeDisclosed"
+        ]
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+        "altSymbol": "SzEntityIncludePossiblySameRelations",
+        "value": 64,
+        "bits": [
+            6
+        ],
+        "definition": "1 << 6"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+        "altSymbol": "SzEntityIncludePossiblyRelatedRelations",
+        "value": 128,
+        "bits": [
+            7
+        ],
+        "definition": "1 << 7"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+        "altSymbol": "SzEntityIncludeNameOnlyRelations",
+        "value": 256,
+        "bits": [
+            8
+        ],
+        "definition": "1 << 8"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS",
+        "altSymbol": "SzEntityIncludeDisclosedRelations",
+        "value": 512,
+        "bits": [
+            9
+        ],
+        "definition": "1 << 9"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_ALL_RELATIONS",
+        "altSymbol": "SzEntityIncludeAllRelations",
+        "value": 960,
+        "bits": [
+            6,
+            7,
+            8,
+            9
+        ],
+        "definition": [
+            "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+            "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+            "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS"
+        ],
+        "altFlags": [
+            "SzEntityIncludePossiblySameRelations",
+            "SzEntityIncludePossiblyRelatedRelations",
+            "SzEntityIncludeNameOnlyRelations",
+            "SzEntityIncludeDisclosedRelations"
+        ]
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_ALL_FEATURES",
+        "altSymbol": "SzEntityIncludeAllFeatures",
+        "value": 1024,
+        "bits": [
+            10
+        ],
+        "definition": "1 << 10"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+        "altSymbol": "SzEntityIncludeRepresentativeFeatures",
+        "value": 2048,
+        "bits": [
+            11
+        ],
+        "definition": "1 << 11"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+        "altSymbol": "SzEntityIncludeEntityName",
+        "value": 4096,
+        "bits": [
+            12
+        ],
+        "definition": "1 << 12"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+        "altSymbol": "SzEntityIncludeRecordSummary",
+        "value": 8192,
+        "bits": [
+            13
+        ],
+        "definition": "1 << 13"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_TYPES",
+        "altSymbol": "SzEntityIncludeRecordTypes",
+        "value": 268435456,
+        "bits": [
+            28
+        ],
+        "definition": "1 << 28"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_DATA",
+        "altSymbol": "SzEntityIncludeRecordData",
+        "value": 16384,
+        "bits": [
+            14
+        ],
+        "definition": "1 << 14"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO",
+        "altSymbol": "SzEntityIncludeRecordMatchingInfo",
+        "value": 32768,
+        "bits": [
+            15
+        ],
+        "definition": "1 << 15"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_JSON_DATA",
+        "altSymbol": "SzEntityIncludeRecordJsonData",
+        "value": 65536,
+        "bits": [
+            16
+        ],
+        "definition": "1 << 16"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_UNMAPPED_DATA",
+        "altSymbol": "SzEntityIncludeRecordUnmappedData",
+        "value": 2147483648,
+        "bits": [
+            31
+        ],
+        "definition": "1 << 31"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_FEATURE_IDS",
+        "altSymbol": "SzEntityIncludeRecordFeatureIds",
+        "value": 262144,
+        "bits": [
+            18
+        ],
+        "definition": "1 << 18"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_FEATURE_DETAILS",
+        "altSymbol": "SzEntityIncludeRecordFeatureDetails",
+        "value": 34359738368,
+        "bits": [
+            35
+        ],
+        "definition": "1 << 35"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_FEATURE_STATS",
+        "altSymbol": "SzEntityIncludeRecordFeatureStats",
+        "value": 68719476736,
+        "bits": [
+            36
+        ],
+        "definition": "1 << 36"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RELATED_ENTITY_NAME",
+        "altSymbol": "SzEntityIncludeRelatedEntityName",
+        "value": 524288,
+        "bits": [
+            19
+        ],
+        "definition": "1 << 19"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO",
+        "altSymbol": "SzEntityIncludeRelatedMatchingInfo",
+        "value": 1048576,
+        "bits": [
+            20
+        ],
+        "definition": "1 << 20"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RELATED_RECORD_SUMMARY",
+        "altSymbol": "SzEntityIncludeRelatedRecordSummary",
+        "value": 2097152,
+        "bits": [
+            21
+        ],
+        "definition": "1 << 21"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RELATED_RECORD_TYPES",
+        "altSymbol": "SzEntityIncludeRelatedRecordTypes",
+        "value": 536870912,
+        "bits": [
+            29
+        ],
+        "definition": "1 << 29"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_RELATED_RECORD_DATA",
+        "altSymbol": "SzEntityIncludeRelatedRecordData",
+        "value": 4194304,
+        "bits": [
+            22
+        ],
+        "definition": "1 << 22"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_INTERNAL_FEATURES",
+        "altSymbol": "SzEntityIncludeInternalFeatures",
+        "value": 8388608,
+        "bits": [
+            23
+        ],
+        "definition": "1 << 23"
+    },
+    {
+        "symbol": "SZ_ENTITY_INCLUDE_FEATURE_STATS",
+        "altSymbol": "SzEntityIncludeFeatureStats",
+        "value": 16777216,
+        "bits": [
+            24
+        ],
+        "definition": "1 << 24"
+    },
+    {
+        "symbol": "SZ_FIND_PATH_STRICT_AVOID",
+        "altSymbol": "SzFindPathStrictAvoid",
+        "value": 33554432,
+        "bits": [
+            25
+        ],
+        "definition": "1 << 25"
+    },
+    {
+        "symbol": "SZ_FIND_PATH_INCLUDE_MATCHING_INFO",
+        "altSymbol": "SzFindPathIncludeMatchingInfo",
+        "value": 1073741824,
+        "bits": [
+            30
+        ],
+        "definition": "1 << 30"
+    },
+    {
+        "symbol": "SZ_FIND_NETWORK_INCLUDE_MATCHING_INFO",
+        "altSymbol": "SzFindNetworkIncludeMatchingInfo",
+        "value": 8589934592,
+        "bits": [
+            33
+        ],
+        "definition": "1 << 33"
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_STATS",
+        "altSymbol": "SzSearchIncludeStats",
+        "value": 134217728,
+        "bits": [
+            27
+        ],
+        "definition": "1 << 27"
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_RESOLVED",
+        "altSymbol": "SzSearchIncludeResolved",
+        "value": 1,
+        "bits": [
+            0
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+        "altSymbol": "SzSearchIncludePossiblySame",
+        "value": 2,
+        "bits": [
+            1
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_POSSIBLY_SAME"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME"
+        ],
+        "altFlags": [
+            "SzSearchIncludePossiblySame"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+        "altSymbol": "SzSearchIncludePossiblyRelated",
+        "value": 4,
+        "bits": [
+            2
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_POSSIBLY_RELATED"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED"
+        ],
+        "altFlags": [
+            "SzSearchIncludePossiblyRelated"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_NAME_ONLY",
+        "altSymbol": "SzSearchIncludeNameOnly",
+        "value": 8,
+        "bits": [
+            3
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_NAME_ONLY"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_NAME_ONLY"
+        ],
+        "altFlags": [
+            "SzSearchIncludeNameOnly"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_ALL_ENTITIES",
+        "altSymbol": "SzSearchIncludeAllEntities",
+        "value": 15,
+        "bits": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "definition": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+            "SZ_SEARCH_INCLUDE_NAME_ONLY"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+            "SZ_SEARCH_INCLUDE_NAME_ONLY"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzSearchIncludePossiblyRelated",
+            "SzSearchIncludeNameOnly"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_ALL_CANDIDATES",
+        "altSymbol": "SzSearchIncludeAllCandidates",
+        "value": 4294967296,
+        "bits": [
+            32
+        ],
+        "definition": "1 << 32"
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_REQUEST",
+        "altSymbol": "SzSearchIncludeRequest",
+        "value": 137438953472,
+        "bits": [
+            37
+        ],
+        "definition": "1 << 37"
+    },
+    {
+        "symbol": "SZ_SEARCH_INCLUDE_REQUEST_DETAILS",
+        "altSymbol": "SzSearchIncludeRequestDetails",
+        "value": 274877906944,
+        "bits": [
+            38
+        ],
+        "definition": "1 << 38"
+    },
+    {
+        "symbol": "SZ_RECORD_DEFAULT_FLAGS",
+        "altSymbol": "SzRecordDefaultFlags",
+        "value": 65536,
+        "bits": [
+            16
+        ],
+        "definition": [
+            "SZ_ENTITY_INCLUDE_RECORD_JSON_DATA"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_RECORD_JSON_DATA"
+        ],
+        "altFlags": [
+            "SzEntityIncludeRecordJsonData"
+        ]
+    },
+    {
+        "symbol": "SZ_ENTITY_CORE_FLAGS",
+        "altSymbol": "SzEntityCoreFlags",
+        "value": 63488,
+        "bits": [
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "definition": [
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RECORD_DATA",
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RECORD_DATA",
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO"
+        ],
+        "altFlags": [
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzEntityIncludeRecordData",
+            "SzEntityIncludeRecordMatchingInfo"
+        ]
+    },
+    {
+        "symbol": "SZ_ENTITY_DEFAULT_FLAGS",
+        "altSymbol": "SzEntityDefaultFlags",
+        "value": 3734464,
+        "bits": [
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            20,
+            21
+        ],
+        "definition": [
+            "SZ_ENTITY_CORE_FLAGS",
+            "SZ_ENTITY_INCLUDE_ALL_RELATIONS",
+            "SZ_ENTITY_INCLUDE_RELATED_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RELATED_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RECORD_DATA",
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+            "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_RELATED_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RELATED_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO"
+        ],
+        "altFlags": [
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzEntityIncludeRecordData",
+            "SzEntityIncludeRecordMatchingInfo",
+            "SzEntityIncludePossiblySameRelations",
+            "SzEntityIncludePossiblyRelatedRelations",
+            "SzEntityIncludeNameOnlyRelations",
+            "SzEntityIncludeDisclosedRelations",
+            "SzEntityIncludeRelatedEntityName",
+            "SzEntityIncludeRelatedRecordSummary",
+            "SzEntityIncludeRelatedMatchingInfo"
+        ]
+    },
+    {
+        "symbol": "SZ_ENTITY_BRIEF_DEFAULT_FLAGS",
+        "altSymbol": "SzEntityBriefDefaultFlags",
+        "value": 1082304,
+        "bits": [
+            6,
+            7,
+            8,
+            9,
+            15,
+            20
+        ],
+        "definition": [
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_ALL_RELATIONS",
+            "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+            "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO"
+        ],
+        "altFlags": [
+            "SzEntityIncludeRecordMatchingInfo",
+            "SzEntityIncludePossiblySameRelations",
+            "SzEntityIncludePossiblyRelatedRelations",
+            "SzEntityIncludeNameOnlyRelations",
+            "SzEntityIncludeDisclosedRelations",
+            "SzEntityIncludeRelatedMatchingInfo"
+        ]
+    },
+    {
+        "symbol": "SZ_EXPORT_DEFAULT_FLAGS",
+        "altSymbol": "SzExportDefaultFlags",
+        "value": 3734497,
+        "bits": [
+            0,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            20,
+            21
+        ],
+        "definition": [
+            "SZ_EXPORT_INCLUDE_ALL_ENTITIES",
+            "SZ_ENTITY_DEFAULT_FLAGS"
+        ],
+        "flags": [
+            "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES",
+            "SZ_EXPORT_INCLUDE_SINGLE_RECORD_ENTITIES",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RECORD_DATA",
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_SAME_RELATIONS",
+            "SZ_ENTITY_INCLUDE_POSSIBLY_RELATED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_NAME_ONLY_RELATIONS",
+            "SZ_ENTITY_INCLUDE_DISCLOSED_RELATIONS",
+            "SZ_ENTITY_INCLUDE_RELATED_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RELATED_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RELATED_MATCHING_INFO"
+        ],
+        "altFlags": [
+            "SzExportIncludeMultiRecordEntities",
+            "SzExportIncludeSingleRecordEntities",
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzEntityIncludeRecordData",
+            "SzEntityIncludeRecordMatchingInfo",
+            "SzEntityIncludePossiblySameRelations",
+            "SzEntityIncludePossiblyRelatedRelations",
+            "SzEntityIncludeNameOnlyRelations",
+            "SzEntityIncludeDisclosedRelations",
+            "SzEntityIncludeRelatedEntityName",
+            "SzEntityIncludeRelatedRecordSummary",
+            "SzEntityIncludeRelatedMatchingInfo"
+        ]
+    },
+    {
+        "symbol": "SZ_FIND_PATH_DEFAULT_FLAGS",
+        "altSymbol": "SzFindPathDefaultFlags",
+        "value": 1073754112,
+        "bits": [
+            12,
+            13,
+            30
+        ],
+        "definition": [
+            "SZ_FIND_PATH_INCLUDE_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY"
+        ],
+        "flags": [
+            "SZ_FIND_PATH_INCLUDE_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY"
+        ],
+        "altFlags": [
+            "SzFindPathIncludeMatchingInfo",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary"
+        ]
+    },
+    {
+        "symbol": "SZ_FIND_NETWORK_DEFAULT_FLAGS",
+        "altSymbol": "SzFindNetworkDefaultFlags",
+        "value": 8589946880,
+        "bits": [
+            12,
+            13,
+            33
+        ],
+        "definition": [
+            "SZ_FIND_NETWORK_INCLUDE_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY"
+        ],
+        "flags": [
+            "SZ_FIND_NETWORK_INCLUDE_MATCHING_INFO",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY"
+        ],
+        "altFlags": [
+            "SzFindNetworkIncludeMatchingInfo",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary"
+        ]
+    },
+    {
+        "symbol": "SZ_WHY_ENTITIES_DEFAULT_FLAGS",
+        "altSymbol": "SzWhyEntitiesDefaultFlags",
+        "value": 67108864,
+        "bits": [
+            26
+        ],
+        "definition": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "flags": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "altFlags": [
+            "SzIncludeFeatureScores"
+        ]
+    },
+    {
+        "symbol": "SZ_WHY_RECORDS_DEFAULT_FLAGS",
+        "altSymbol": "SzWhyRecordsDefaultFlags",
+        "value": 67108864,
+        "bits": [
+            26
+        ],
+        "definition": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "flags": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "altFlags": [
+            "SzIncludeFeatureScores"
+        ]
+    },
+    {
+        "symbol": "SZ_WHY_RECORD_IN_ENTITY_DEFAULT_FLAGS",
+        "altSymbol": "SzWhyRecordInEntityDefaultFlags",
+        "value": 67108864,
+        "bits": [
+            26
+        ],
+        "definition": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "flags": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "altFlags": [
+            "SzIncludeFeatureScores"
+        ]
+    },
+    {
+        "symbol": "SZ_WHY_SEARCH_DEFAULT_FLAGS",
+        "altSymbol": "SzWhySearchDefaultFlags",
+        "value": 275079233536,
+        "bits": [
+            26,
+            27,
+            38
+        ],
+        "definition": [
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_REQUEST_DETAILS",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "flags": [
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_REQUEST_DETAILS",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzIncludeFeatureScores",
+            "SzSearchIncludeRequestDetails",
+            "SzSearchIncludeStats"
+        ]
+    },
+    {
+        "symbol": "SZ_HOW_ENTITY_DEFAULT_FLAGS",
+        "altSymbol": "SzHowEntityDefaultFlags",
+        "value": 67108864,
+        "bits": [
+            26
+        ],
+        "definition": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "flags": [
+            "SZ_INCLUDE_FEATURE_SCORES"
+        ],
+        "altFlags": [
+            "SzIncludeFeatureScores"
+        ]
+    },
+    {
+        "symbol": "SZ_VIRTUAL_ENTITY_DEFAULT_FLAGS",
+        "altSymbol": "SzVirtualEntityDefaultFlags",
+        "value": 63488,
+        "bits": [
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "definition": [
+            "SZ_ENTITY_CORE_FLAGS"
+        ],
+        "flags": [
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_ENTITY_INCLUDE_RECORD_DATA",
+            "SZ_ENTITY_INCLUDE_RECORD_MATCHING_INFO"
+        ],
+        "altFlags": [
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzEntityIncludeRecordData",
+            "SzEntityIncludeRecordMatchingInfo"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_BY_ATTRIBUTES_ALL",
+        "altSymbol": "SzSearchByAttributesAll",
+        "value": 201340943,
+        "bits": [
+            0,
+            1,
+            2,
+            3,
+            11,
+            12,
+            13,
+            26,
+            27
+        ],
+        "definition": [
+            "SZ_SEARCH_INCLUDE_ALL_ENTITIES",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+            "SZ_SEARCH_INCLUDE_NAME_ONLY",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzSearchIncludePossiblyRelated",
+            "SzSearchIncludeNameOnly",
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzIncludeFeatureScores",
+            "SzSearchIncludeStats"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_BY_ATTRIBUTES_STRONG",
+        "altSymbol": "SzSearchByAttributesStrong",
+        "value": 201340931,
+        "bits": [
+            0,
+            1,
+            11,
+            12,
+            13,
+            26,
+            27
+        ],
+        "definition": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzIncludeFeatureScores",
+            "SzSearchIncludeStats"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_BY_ATTRIBUTES_MINIMAL_ALL",
+        "altSymbol": "SzSearchByAttributesMinimalAll",
+        "value": 134217743,
+        "bits": [
+            0,
+            1,
+            2,
+            3,
+            27
+        ],
+        "definition": [
+            "SZ_SEARCH_INCLUDE_ALL_ENTITIES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+            "SZ_SEARCH_INCLUDE_NAME_ONLY",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzSearchIncludePossiblyRelated",
+            "SzSearchIncludeNameOnly",
+            "SzSearchIncludeStats"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_BY_ATTRIBUTES_MINIMAL_STRONG",
+        "altSymbol": "SzSearchByAttributesMinimalStrong",
+        "value": 134217731,
+        "bits": [
+            0,
+            1,
+            27
+        ],
+        "definition": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzSearchIncludeStats"
+        ]
+    },
+    {
+        "symbol": "SZ_SEARCH_BY_ATTRIBUTES_DEFAULT_FLAGS",
+        "altSymbol": "SzSearchByAttributesDefaultFlags",
+        "value": 201340943,
+        "bits": [
+            0,
+            1,
+            2,
+            3,
+            11,
+            12,
+            13,
+            26,
+            27
+        ],
+        "definition": [
+            "SZ_SEARCH_BY_ATTRIBUTES_ALL"
+        ],
+        "flags": [
+            "SZ_SEARCH_INCLUDE_RESOLVED",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_SAME",
+            "SZ_SEARCH_INCLUDE_POSSIBLY_RELATED",
+            "SZ_SEARCH_INCLUDE_NAME_ONLY",
+            "SZ_ENTITY_INCLUDE_REPRESENTATIVE_FEATURES",
+            "SZ_ENTITY_INCLUDE_ENTITY_NAME",
+            "SZ_ENTITY_INCLUDE_RECORD_SUMMARY",
+            "SZ_INCLUDE_FEATURE_SCORES",
+            "SZ_SEARCH_INCLUDE_STATS"
+        ],
+        "altFlags": [
+            "SzSearchIncludeResolved",
+            "SzSearchIncludePossiblySame",
+            "SzSearchIncludePossiblyRelated",
+            "SzSearchIncludeNameOnly",
+            "SzEntityIncludeRepresentativeFeatures",
+            "SzEntityIncludeEntityName",
+            "SzEntityIncludeRecordSummary",
+            "SzIncludeFeatureScores",
+            "SzSearchIncludeStats"
+        ]
+    }
+]
