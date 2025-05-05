@@ -193,7 +193,7 @@
         "symbol": "SZ_EXPORT_INCLUDE_ALL_HAVING_RELATIONSHIPS",
         "altSymbol": "SzExportIncludeAllHavingRelationships",
         "value": 30,
-        "hexValue": "0x000000000000001e",
+        "hexValue": "0x000000000000001E",
         "bits": [
             1,
             2,
@@ -341,7 +341,7 @@
         "symbol": "SZ_ENTITY_INCLUDE_ALL_RELATIONS",
         "altSymbol": "SzEntityIncludeAllRelations",
         "value": 960,
-        "hexValue": "0x00000000000003c0",
+        "hexValue": "0x00000000000003C0",
         "bits": [
             6,
             7,
@@ -1115,7 +1115,7 @@
         "symbol": "SZ_SEARCH_INCLUDE_ALL_ENTITIES",
         "altSymbol": "SzSearchIncludeAllEntities",
         "value": 15,
-        "hexValue": "0x000000000000000f",
+        "hexValue": "0x000000000000000F",
         "bits": [
             0,
             1,
@@ -1247,7 +1247,7 @@
         "symbol": "SZ_ENTITY_CORE_FLAGS",
         "altSymbol": "SzEntityCoreFlags",
         "value": 63488,
-        "hexValue": "0x000000000000f800",
+        "hexValue": "0x000000000000F800",
         "bits": [
             11,
             12,
@@ -1301,7 +1301,7 @@
         "symbol": "SZ_ENTITY_DEFAULT_FLAGS",
         "altSymbol": "SzEntityDefaultFlags",
         "value": 3734464,
-        "hexValue": "0x000000000038fbc0",
+        "hexValue": "0x000000000038FBC0",
         "bits": [
             6,
             7,
@@ -1374,7 +1374,7 @@
         "symbol": "SZ_ENTITY_BRIEF_DEFAULT_FLAGS",
         "altSymbol": "SzEntityBriefDefaultFlags",
         "value": 1082304,
-        "hexValue": "0x00000000001083c0",
+        "hexValue": "0x00000000001083C0",
         "bits": [
             6,
             7,
@@ -1427,7 +1427,7 @@
         "symbol": "SZ_EXPORT_DEFAULT_FLAGS",
         "altSymbol": "SzExportDefaultFlags",
         "value": 3734497,
-        "hexValue": "0x000000000038fbe1",
+        "hexValue": "0x000000000038FBE1",
         "bits": [
             0,
             5,
@@ -1645,7 +1645,7 @@
         "symbol": "SZ_WHY_SEARCH_DEFAULT_FLAGS",
         "altSymbol": "SzWhySearchDefaultFlags",
         "value": 275079233536,
-        "hexValue": "0x000000400c000000",
+        "hexValue": "0x000000400C000000",
         "bits": [
             26,
             27,
@@ -1709,7 +1709,7 @@
         "symbol": "SZ_VIRTUAL_ENTITY_DEFAULT_FLAGS",
         "altSymbol": "SzVirtualEntityDefaultFlags",
         "value": 63488,
-        "hexValue": "0x000000000000f800",
+        "hexValue": "0x000000000000F800",
         "bits": [
             11,
             12,
@@ -1759,7 +1759,7 @@
         "symbol": "SZ_SEARCH_BY_ATTRIBUTES_ALL",
         "altSymbol": "SzSearchByAttributesAll",
         "value": 201340943,
-        "hexValue": "0x000000000c00380f",
+        "hexValue": "0x000000000C00380F",
         "bits": [
             0,
             1,
@@ -1814,7 +1814,7 @@
         "symbol": "SZ_SEARCH_BY_ATTRIBUTES_STRONG",
         "altSymbol": "SzSearchByAttributesStrong",
         "value": 201340931,
-        "hexValue": "0x000000000c003803",
+        "hexValue": "0x000000000C003803",
         "bits": [
             0,
             1,
@@ -1864,7 +1864,7 @@
         "symbol": "SZ_SEARCH_BY_ATTRIBUTES_MINIMAL_ALL",
         "altSymbol": "SzSearchByAttributesMinimalAll",
         "value": 134217743,
-        "hexValue": "0x000000000800000f",
+        "hexValue": "0x000000000800000F",
         "bits": [
             0,
             1,
@@ -1937,7 +1937,7 @@
         "symbol": "SZ_SEARCH_BY_ATTRIBUTES_DEFAULT_FLAGS",
         "altSymbol": "SzSearchByAttributesDefaultFlags",
         "value": 201340943,
-        "hexValue": "0x000000000c00380f",
+        "hexValue": "0x000000000C00380F",
         "bits": [
             0,
             1,
