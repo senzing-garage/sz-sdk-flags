@@ -51,6 +51,7 @@
             "SZ_FIND_PATH_FLAGS",
             "SZ_FIND_NETWORK_FLAGS",
             "SZ_SEARCH_FLAGS",
+            "SZ_EXPORT_FLAGS",
             "SZ_WHY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS",
             "SZ_HOW_FLAGS"
@@ -60,6 +61,7 @@
             "SzFindPathFlags",
             "SzFindNetworkFlags",
             "SzSearchFlags",
+            "SzExportFlags",
             "SzWhyFlags",
             "SzWhySearchFlags",
             "SzHowFlags"
@@ -486,7 +488,6 @@
         "definition": "1 << 13",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
             "SZ_FIND_PATH_FLAGS",
             "SZ_FIND_NETWORK_FLAGS",
             "SZ_SEARCH_FLAGS",
@@ -497,7 +498,6 @@
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
             "SzFindPathFlags",
             "SzFindNetworkFlags",
             "SzSearchFlags",
@@ -550,7 +550,6 @@
         "definition": "1 << 14",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
             "SZ_FIND_PATH_FLAGS",
             "SZ_FIND_NETWORK_FLAGS",
             "SZ_SEARCH_FLAGS",
@@ -561,7 +560,6 @@
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
             "SzFindPathFlags",
             "SzFindNetworkFlags",
             "SzSearchFlags",
@@ -668,8 +666,8 @@
         ]
     },
     {
-        "symbol": "SZ_ENTITY_INCLUDE_RECORD_FEATURE_IDS",
-        "altSymbol": "SzEntityIncludeRecordFeatureIds",
+        "symbol": "SZ_ENTITY_INCLUDE_RECORD_FEATURES",
+        "altSymbol": "SzEntityIncludeRecordFeatures",
         "value": 262144,
         "hexValue": "0x0000000000040000",
         "bits": [
@@ -678,7 +676,6 @@
         "definition": "1 << 18",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
             "SZ_FIND_PATH_FLAGS",
             "SZ_FIND_NETWORK_FLAGS",
             "SZ_SEARCH_FLAGS",
@@ -689,7 +686,6 @@
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
             "SzFindPathFlags",
             "SzFindNetworkFlags",
             "SzSearchFlags",
@@ -1043,12 +1039,10 @@
             "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1063,12 +1057,10 @@
             "SZ_EXPORT_INCLUDE_POSSIBLY_SAME"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1083,12 +1075,10 @@
             "SZ_EXPORT_INCLUDE_POSSIBLY_RELATED"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1103,12 +1093,10 @@
             "SZ_EXPORT_INCLUDE_NAME_ONLY"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1141,12 +1129,10 @@
             "SzSearchIncludeNameOnly"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1159,12 +1145,10 @@
         ],
         "definition": "1 << 32",
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1802,12 +1786,10 @@
             "SzSearchIncludeStats"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1852,12 +1834,10 @@
             "SzSearchIncludeStats"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1891,12 +1871,10 @@
             "SzSearchIncludeStats"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1925,12 +1903,10 @@
             "SzSearchIncludeStats"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     },
     {
@@ -1975,12 +1951,10 @@
             "SzSearchIncludeStats"
         ],
         "groups": [
-            "SZ_SEARCH_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS"
+            "SZ_SEARCH_FLAGS"
         ],
         "altGroups": [
-            "SzSearchFlags",
-            "SzWhySearchFlags"
+            "SzSearchFlags"
         ]
     }
 ]
