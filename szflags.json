@@ -9,10 +9,16 @@
         ],
         "definition": "1 << 62",
         "groups": [
-            "SZ_MODIFY_FLAGS"
+            "SZ_ADD_RECORD_FLAGS",
+            "SZ_DELETE_RECORD_FLAGS",
+            "SZ_REDO_FLAGS",
+            "SZ_REEVALUATE_FLAGS"
         ],
         "altGroups": [
-            "SzModifyFlags"
+            "SzAddRecordFlags",
+            "SzDeleteRecordFlags",
+            "SzRedoFlags",
+            "SzReevaluateFlags"
         ]
     },
     {
@@ -25,16 +31,20 @@
         ],
         "definition": "1 << 26",
         "groups": [
+            "SZ_HOW_FLAGS",
             "SZ_SEARCH_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
+            "SzHowFlags",
             "SzSearchFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -48,23 +58,27 @@
         "definition": "1 << 34",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_HOW_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzHowFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -238,20 +252,24 @@
         "definition": "1 << 6",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -266,20 +284,24 @@
         "definition": "1 << 7",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -294,20 +316,24 @@
         "definition": "1 << 8",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -322,20 +348,24 @@
         "definition": "1 << 9",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -370,20 +400,24 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -398,23 +432,27 @@
         "definition": "1 << 10",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -428,23 +466,27 @@
         "definition": "1 << 11",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -458,23 +500,27 @@
         "definition": "1 << 12",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -488,23 +534,27 @@
         "definition": "1 << 13",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -518,25 +568,29 @@
         "definition": "1 << 28",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -550,23 +604,27 @@
         "definition": "1 << 14",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -580,25 +638,29 @@
         "definition": "1 << 15",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -612,25 +674,29 @@
         "definition": "1 << 16",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -644,25 +710,29 @@
         "definition": "1 << 31",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -676,23 +746,27 @@
         "definition": "1 << 18",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -706,25 +780,29 @@
         "definition": "1 << 35",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -738,25 +816,29 @@
         "definition": "1 << 36",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -770,20 +852,24 @@
         "definition": "1 << 19",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -798,20 +884,24 @@
         "definition": "1 << 20",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -826,20 +916,24 @@
         "definition": "1 << 21",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -854,20 +948,24 @@
         "definition": "1 << 29",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -882,20 +980,24 @@
         "definition": "1 << 22",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -910,25 +1012,29 @@
         "definition": "1 << 23",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -942,23 +1048,27 @@
         "definition": "1 << 24",
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1206,25 +1316,29 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_RECORD_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_RECORD_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzRecordFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzRecordFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1262,23 +1376,27 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1337,20 +1455,24 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -1390,20 +1512,24 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
             "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
             "SzWhySearchFlags"
         ]
     },
@@ -1553,16 +1679,20 @@
             "SzIncludeFeatureScores"
         ],
         "groups": [
+            "SZ_HOW_FLAGS",
             "SZ_SEARCH_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
+            "SzHowFlags",
             "SzSearchFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1583,16 +1713,20 @@
             "SzIncludeFeatureScores"
         ],
         "groups": [
+            "SZ_HOW_FLAGS",
             "SZ_SEARCH_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
+            "SzHowFlags",
             "SzSearchFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1613,16 +1747,20 @@
             "SzIncludeFeatureScores"
         ],
         "groups": [
+            "SZ_HOW_FLAGS",
             "SZ_SEARCH_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
+            "SzHowFlags",
             "SzSearchFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1677,16 +1815,20 @@
             "SzIncludeFeatureScores"
         ],
         "groups": [
+            "SZ_HOW_FLAGS",
             "SZ_SEARCH_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_HOW_FLAGS"
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
+            "SzHowFlags",
             "SzSearchFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzHowFlags"
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
@@ -1720,23 +1862,27 @@
         ],
         "groups": [
             "SZ_ENTITY_FLAGS",
-            "SZ_FIND_PATH_FLAGS",
-            "SZ_FIND_NETWORK_FLAGS",
-            "SZ_SEARCH_FLAGS",
             "SZ_EXPORT_FLAGS",
-            "SZ_WHY_FLAGS",
-            "SZ_WHY_SEARCH_FLAGS",
-            "SZ_VIRTUAL_ENTITY_FLAGS"
+            "SZ_FIND_NETWORK_FLAGS",
+            "SZ_FIND_PATH_FLAGS",
+            "SZ_SEARCH_FLAGS",
+            "SZ_VIRTUAL_ENTITY_FLAGS",
+            "SZ_WHY_ENTITIES_FLAGS",
+            "SZ_WHY_RECORDS_FLAGS",
+            "SZ_WHY_RECORD_IN_ENTITY_FLAGS",
+            "SZ_WHY_SEARCH_FLAGS"
         ],
         "altGroups": [
             "SzEntityFlags",
-            "SzFindPathFlags",
-            "SzFindNetworkFlags",
-            "SzSearchFlags",
             "SzExportFlags",
-            "SzWhyFlags",
-            "SzWhySearchFlags",
-            "SzVirtualEntityFlags"
+            "SzFindNetworkFlags",
+            "SzFindPathFlags",
+            "SzSearchFlags",
+            "SzVirtualEntityFlags",
+            "SzWhyEntitiesFlags",
+            "SzWhyRecordsFlags",
+            "SzWhyRecordInEntityFlags",
+            "SzWhySearchFlags"
         ]
     },
     {
