@@ -70,6 +70,18 @@
         ]
     },
     {
+        "symbol": "SZ_INCLUDE_FEATURE_HASHES",
+        "altSymbol": "SzIncludeFeatureHashes",
+        "value": 2199023255552,
+        "hexValue": "0x0000020000000000",
+        "bits": [
+            41
+        ],
+        "definition": "1 << 41",
+        "groups": [],
+        "altGroups": []
+    },
+    {
         "symbol": "SZ_EXPORT_INCLUDE_MULTI_RECORD_ENTITIES",
         "altSymbol": "SzExportIncludeMultiRecordEntities",
         "value": 1,
