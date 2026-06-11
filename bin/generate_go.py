@@ -4,7 +4,6 @@
 Used to generate go/main.go
 """
 
-
 INPUT_FILE = "szerrors.json"
 OUTPUT_FILE = "go/szerrortypes.go"
 

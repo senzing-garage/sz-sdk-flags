@@ -1,4 +1,4 @@
-name: Pylint
+name: Dependency scan
 
 on:
   pull_request:
@@ -11,14 +11,14 @@ concurrency:
 permissions: {}
 
 jobs:
-  pylint:
+  pip-audit:
     permissions:
       contents: read
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.13"]
     timeout-minutes: 10
 
     steps:
@@ -37,19 +37,9 @@ jobs:
           python -m venv ./venv
           source ./venv/bin/activate
           echo "PATH=${PATH}" >> "${GITHUB_ENV}"
-          python -m pip install --upgrade pip
-          python -m pip install --group all .
+          python -m pip install .
 
-      - name: Analyzing the code with pylint
-        run: |
-          # shellcheck disable=SC2046
-          pylint $(git ls-files '*.py' ':!:docs/source/*')
-
-      - name: Notify Slack on failure
-        if: (failure() || cancelled()) && github.ref_name == github.event.repository.default_branch
-        uses: senzing-factory/build-resources/slack-failure-notification@v4
+      - name: Run pip-audit
+        uses: pypa/gh-action-pip-audit@v1.1.0
         with:
-          job-status: ${{ job.status }}
-          slack-channel: ${{ secrets.SLACK_CHANNEL }}
-          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
-          additional-info: "Python: ${{ matrix.python-version }}"
+          inputs: ${{ github.workspace}}

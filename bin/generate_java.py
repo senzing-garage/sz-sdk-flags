@@ -4,7 +4,6 @@
 Used to generate java/SzExceptionManager.java
 """
 
-
 INPUT_FILE = "szerrors.json"
 OUTPUT_FILE = "java/SzExceptionMapper.java"
 PAD_CLASS = 35
