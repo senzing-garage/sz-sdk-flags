@@ -1,4 +1,4 @@
-name: Spellcheck
+name: Bandit
 
 on:
   pull_request:
@@ -11,7 +11,9 @@ concurrency:
 permissions: {}
 
 jobs:
-  spellcheck:
+  bandit:
     permissions:
       contents: read
-    uses: senzing-factory/build-resources/.github/workflows/cspell.yaml@v4
+    uses: senzing-factory/build-resources/.github/workflows/bandit.yaml@v4
+    with:
+      targets: bin

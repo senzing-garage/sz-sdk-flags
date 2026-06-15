@@ -1,4 +1,4 @@
-name: Pylint
+name: Isort
 
 on:
   pull_request:
@@ -11,14 +11,14 @@ concurrency:
 permissions: {}
 
 jobs:
-  pylint:
+  isort:
     permissions:
       contents: read
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.13"]
     timeout-minutes: 10
 
     steps:
@@ -40,16 +40,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install --group all .
 
-      - name: Analyzing the code with pylint
-        run: |
-          # shellcheck disable=SC2046
-          pylint $(git ls-files '*.py' ':!:docs/source/*')
-
-      - name: Notify Slack on failure
-        if: (failure() || cancelled()) && github.ref_name == github.event.repository.default_branch
-        uses: senzing-factory/build-resources/slack-failure-notification@v4
+      - name: Run isort
+        uses: isort/isort-action@v1
         with:
-          job-status: ${{ job.status }}
-          slack-channel: ${{ secrets.SLACK_CHANNEL }}
-          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
-          additional-info: "Python: ${{ matrix.python-version }}"
+          sort-paths: "bin"

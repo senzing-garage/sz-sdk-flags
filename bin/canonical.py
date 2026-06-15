@@ -36,9 +36,7 @@ with open(INPUT_FILE, encoding="utf-8") as input_file:
 #     new_errors[key.zfill(5)] = values
 # new_errors_pretty = json.dumps(errors, sort_keys=True, indent=4)
 
-new_errors_pretty = json.dumps(
-    {int(x): errors[x] for x in errors.keys()}, sort_keys=True, indent=4
-)
+new_errors_pretty = json.dumps({int(x): errors[x] for x in errors.keys()}, sort_keys=True, indent=4)
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
     file.write(new_errors_pretty)

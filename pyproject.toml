@@ -1,0 +1,90 @@
+[project]
+name = "sz-sdk-flags"
+version = "0.1.0"
+description = "Senzing SDK flag definitions and code generators"
+authors = [{ name = "senzing", email = "support@senzing.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+license = "Apache-2.0"
+license-files = [
+  "LICENSE",
+  ".github/senzing-corporate-contributor-license-agreement.pdf",
+  ".github/senzing-individual-contributor-license-agreement.pdf",
+]
+
+[project.urls]
+bugtracker = "https://github.com/senzing-garage/sz-sdk-flags/issues"
+changelog = "https://github.com/senzing-garage/sz-sdk-flags/blob/main/CHANGELOG.md"
+source = "https://github.com/senzing-garage/sz-sdk-flags"
+
+[build-system]
+requires = ["setuptools>=82.0.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# This repo ships code generators (bin/) and data (szflags.json), not an
+# installable package, so there are no packages to discover.
+[tool.setuptools]
+packages = []
+
+[dependency-groups]
+all = [
+  { include-group = "development" },
+  { include-group = "lint" },
+]
+development = [
+  "build==1.5.0",
+  "cryptography==48.0.0",
+  "psutil==7.2.2",
+  "twine==6.2.0",
+  "virtualenv==21.3.3",
+  "wheel==0.47.0",
+]
+lint = [
+  "bandit==1.8.6; python_version <= '3.11'",
+  "bandit==1.9.4; python_version > '3.11'",
+  "black==25.11.0; python_version <= '3.11'",
+  "black==26.5.1; python_version > '3.11'",
+  "flake8==7.3.0",
+  "isort==6.1.0; python_version <= '3.11'",
+  "isort==8.0.1; python_version > '3.11'",
+  "mypy==2.1.0",
+  "pylint-per-file-ignores==2.0.3; python_version <= '3.11'",
+  "pylint-per-file-ignores==3.2.1; python_version > '3.11'",
+  "pylint==3.3.9; python_version <= '3.11'",
+  "pylint==4.0.5; python_version > '3.11'",
+]
+
+[tool.bandit]
+skips = ["B101"]
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+extend-ignore = ["E203", "E501", "E704", "W503"]
+max-line-length = 120
+
+[tool.isort]
+profile = "black"
+src_paths = ["bin"]
+
+[tool.pylint]
+ignored-argument-names = "args|kwargs"
+disable = [
+  "broad-except",
+  "consider-using-f-string",
+  "duplicate-code",
+  "line-too-long",
+  "too-many-arguments",
+  "too-many-branches",
+  "too-many-function-args",
+  "too-many-locals",
+]
+good-names = ["szerror"]
+ignore = ["__init__.py", "docs/source/conf.py"]
+notes = ["FIXME"]

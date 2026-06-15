@@ -4,7 +4,6 @@
 Used to generate python/szerror.py
 """
 
-
 INPUT_FILE = "szerrors.json"
 OUTPUT_FILE = "python/szerror.py"
 PAD_CLASS = 35

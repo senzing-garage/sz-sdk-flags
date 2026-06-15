@@ -1,0 +1,147 @@
+# Workflows
+
+## add-labels-standardized.yaml
+
+When issues are opened,
+this action adds appropriate labels to the issue.
+(e.g. "triage", "customer-submission")
+
+- [Add Labels Standardized GitHub Action]
+  - Uses: [senzing-factory/build-resources/.../add-labels-to-issue.yaml]
+
+## add-to-project-garage-dependabot.yaml
+
+When a Dependabot Pull Request (PR) is made against `main` branch,
+this action adds the PR to the "Garage" project board as "In Progress".
+
+- [Add to Project Garage Dependabot GitHub Action]
+  - Uses: [senzing-factory/build-resources/.../add-to-project-dependabot.yaml]
+
+## add-to-project-garage.yaml
+
+When an issue is created,
+this action adds the issue to the "Garage" board as "Backlog".
+
+- [Add to Project Garage GitHub Action]
+  - Uses: [senzing-factory/build-resources/.../add-to-project.yaml]
+
+## bandit.yaml
+
+When a Pull Request (PR) is made against `main` branch,
+this action runs [Bandit] to detect security issues.
+
+- [bandit.yaml]
+  - Uses: [lukehinds/bandit-action]
+
+## black.yaml
+
+When a change is committed to GitHub or a Pull Request is made against the `main` branch,
+this action runs the [Black] code formatter.
+
+- [black.yaml]
+
+## dependabot-approve-and-merge.yaml
+
+When a Dependabot Pull Request (PR) is made against the `main` branch,
+this action determines if it should be automatically approved and merged into the `main` branch.
+Once this action occurs [move-pr-to-done-dependabot.yaml] moves the PR on the "Garage" project board to "Done".
+
+- [Dependabot Approve and Merge GitHub Action]
+  - Uses: [senzing-factory/build-resources/.../dependabot-approve-and-merge.yaml]
+
+## dependency-scan.yaml
+
+When a Pull Request is made against the `main` branch,
+this action runs [Fast Python Vulnerability Scanner] and [pip-audit].
+
+- [dependency-scan.yaml]
+  - Uses:
+    - [Fast Python Vulnerability Scanner]
+    - [pypa/gh-action-pip-audit]
+
+## flake8.yaml
+
+When a change is committed to GitHub or a Pull Request is made against the `main` branch,
+this action runs [flake8] for Python style enforcement.
+
+- [flake8.yaml]
+  - Uses: [py-actions/flake8]
+
+## isort.yaml
+
+When a change is committed to GitHub or a Pull Request is made against the `main` branch,
+this action runs [isort] to sort the Python import statements
+
+- [isort.yaml]
+  - Uses: [isort/isort-action]
+
+## lint-workflows.yaml
+
+When a change is committed to GitHub or a Pull Request is made against the `main` branch,
+this action runs [super-linter] to run multiple linters against the code.
+
+- [Lint Workflows GitHub Action]
+  - Configuration:
+    - [.checkov.yaml]
+    - [.jscpd.json]
+    - [.yaml-lint.yml]
+  - Uses: [senzing-factory/build-resources/.../lint-workflows.yaml]
+
+## move-pr-to-done-dependabot.yaml
+
+When a Pull Request is merged into the `main` branch,
+this action moves the PR on the "Garage" project board to "Done".
+
+- [Move PR to Done Dependabot GitHub Action]
+  - Uses: [senzing-factory/build-resources/.../move-pr-to-done-dependabot.yaml]
+
+## mypy.yaml
+
+When a change is committed to GitHub or a Pull Request is made against the `main` branch,
+this action runs [mypy] to perform static type checking.
+
+- [mypy.yaml]
+
+## pylint.yaml
+
+When a change is committed to GitHub,
+this action runs [pylint] to perform static code analysis.
+
+- [pylint.yaml]
+
+[.checkov.yaml]: ../linters/README.md#checkovyaml
+[.jscpd.json]: ../linters/README.md#jscpdjson
+[.yaml-lint.yml]: ../linters/README.md#yaml-lintyml
+[Add Labels Standardized GitHub Action]: add-labels-standardized.yaml
+[Add to Project Garage Dependabot GitHub Action]: add-to-project-garage-dependabot.yaml
+[Add to Project Garage GitHub Action]: add-to-project-garage.yaml
+[bandit.yaml]: bandit.yaml
+[Bandit]: https://bandit.readthedocs.io/en/latest/
+[black.yaml]: black.yaml
+[Black]: https://github.com/psf/black
+[Dependabot Approve and Merge GitHub Action]: dependabot-approve-and-merge.yaml
+[dependency-scan.yaml]: dependency-scan.yaml
+[Fast Python Vulnerability Scanner]: https://github.com/vanschelven/fpvs/
+[flake8.yaml]: flake8.yaml
+[flake8]: https://flake8.pycqa.org/en/latest/
+[isort.yaml]: isort.yaml
+[isort]: https://pycqa.github.io/isort/
+[isort/isort-action]: https://github.com/isort/isort-action
+[Lint Workflows GitHub Action]: lint-workflows.yaml
+[lukehinds/bandit-action]: https://github.com/lukehinds/bandit-action
+[Move PR to Done Dependabot GitHub Action]: move-pr-to-done-dependabot.yaml
+[move-pr-to-done-dependabot.yaml]: move-pr-to-done-dependabot.yaml
+[mypy.yaml]: mypy.yaml
+[mypy]: https://mypy-lang.org/
+[pip-audit]: https://github.com/pypa/pip-audit
+[py-actions/flake8]: https://github.com/py-actions/flake8
+[pylint.yaml]: pylint.yaml
+[pylint]: https://pypi.org/project/pylint/
+[pypa/gh-action-pip-audit]: https://github.com/pypa/gh-action-pip-audit
+[senzing-factory/build-resources/.../add-labels-to-issue.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/add-labels-to-issue.yaml
+[senzing-factory/build-resources/.../add-to-project-dependabot.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/add-to-project-dependabot.yaml
+[senzing-factory/build-resources/.../add-to-project.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/add-to-project.yaml
+[senzing-factory/build-resources/.../dependabot-approve-and-merge.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/dependabot-approve-and-merge.yaml
+[senzing-factory/build-resources/.../lint-workflows.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/lint-workflows.yaml
+[senzing-factory/build-resources/.../move-pr-to-done-dependabot.yaml]: https://github.com/senzing-factory/build-resources/blob/main/.github/workflows/move-pr-to-done-dependabot.yaml
+[super-linter]: https://github.com/super-linter/super-linter
