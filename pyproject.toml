@@ -41,7 +41,7 @@ development = [
   "cryptography==48.0.1",
   "psutil==7.2.2",
   "twine==6.2.0",
-  "virtualenv==21.4.1",
+  "virtualenv==21.4.2",
   "wheel==0.47.0",
 ]
 lint = [
