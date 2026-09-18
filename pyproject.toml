@@ -37,7 +37,7 @@ all = [
   { include-group = "lint" },
 ]
 development = [
-  "build==1.5.0",
+  "build==1.6.0",
   "cryptography==50.0.1",
   "psutil==7.2.2",
   "twine==7.0.0",
