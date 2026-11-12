@@ -179,3 +179,4 @@ cython_debug/
 # VSCode
 .vscode/
 .history
+.claude/settings.local.json
